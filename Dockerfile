@@ -1,7 +1,7 @@
 # One build: official Paperclip + Docker CLI + verified launcher repair.
 FROM ghcr.io/paperclipai/paperclip:sha-d554c47
 USER root
-LABEL com.vts.purpose="figma-test-launcher-repair" com.vts.issue="VIS-9"
+LABEL com.vts.purpose="paperclip-runtime"
 # Refuse to overwrite an unexpected upstream launcher version.
 RUN echo 'd2681e44c91cfd3384dbeac9bd6e520a511b53f86b8270c1a93cce8eaeed5571  /app/packages/adapters/codex-local/src/server/execute.ts' | sha256sum -c - && \
     echo 'bafc66cd31eeccf714824267aee9f75563842a12c823cf60717c5397c7228a47  /app/packages/adapter-utils/src/acpx-engine/execute.ts' | sha256sum -c -

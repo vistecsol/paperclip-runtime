@@ -21,3 +21,9 @@ Base tag: ghcr.io/paperclipai/paperclip:sha-d554c47. Verified against the GHCR m
 Canonical repository: https://github.com/vistecsol/paperclip-runtime. Initial version: `0.1.0-preview.1`. The Figma plugin is maintained separately at https://github.com/vistecsol/paperclip-figma-integration.
 
 The launcher repair removes the redundant oversized history environment entry while retaining full history on stdin. Files were imported unchanged from the tagged build bundle recorded on VTS task VIS-5, attachment `a3292168-1d36-434b-8e40-6bb7f18407f5`. Upstream source: https://github.com/paperclipai/paperclip. Review upstream licensing for the copied adapter sources before redistribution.
+
+## Naming and change history
+
+The image label `com.vts.purpose` is `paperclip-runtime`, matching the repository name. Keep issue identifiers and individual fix names out of the image identity.
+
+Repository tags use semantic version numbers, such as `v0.1.0-preview.1`; image tags use the corresponding version, such as `0.1.0-preview.1`. Describe each fix in its commit message and summarize it in CHANGELOG.md. Do not use fix descriptions as tags. Preview versions do not imply release readiness. The upstream base image tag is tracked separately for compatibility.
